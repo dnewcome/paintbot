@@ -1,0 +1,11 @@
+# generated CAD artifacts
+cad/build/
+build/
+*.stl
+*.png
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
