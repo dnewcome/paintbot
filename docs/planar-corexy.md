@@ -62,12 +62,26 @@ don't.
   (~1.4 m top/bottom) and the moving gantry beam the long member → keep the gantry
   beam stiff (boxed/carbon) and the belt 15 mm steel-core; this is the worst axis.
 
-## Belt routing (single-plane, motors at bottom corners)
-Standard single-plane CoreXY: 2 drive pulleys (bottom corners) + corner idlers
-(top corners) + 2 idlers per moving gantry end + carriage belt anchors (~8 idlers).
-**Exact idler offsets/strand routing will be PORTED from a verified reference
-(corexy.com R1 routing), not reinvented** — idler hole positions on the plates are
-parameters, finalized once the routing is pinned against the reference.
+## Belt routing (single-plane, motors at bottom corners) — laid out
+Reconstructed in `cad/routing.py` (emits `build/routing.svg`). Topology:
+- **Belt A** (left motor): M_A → bottom edge → BR → up right upright → GR_a →
+  along gantry → carriage → GL_a → down left upright → M_A.
+- **Belt B** (right motor): M_B → bottom edge → BL → up left upright → GL_b →
+  along gantry → carriage → GR_b → down right upright → M_B.
+- The two bottom strands cross near center-bottom → **2 crossover idlers** stagger
+  them (single-plane). **Top edge carries NO belt** → free for the counterbalance.
+- **8 idlers:** BL, BR (bottom corners) + GL_a/GL_b/GR_a/GR_b (gantry ends) + 2
+  crossover. Kinematics X=(a+b)/2, Y=(a−b)/2.
+- Idler coordinates are first-pass — verify strand clearances against a reference build.
+
+## Plate set status (laser DXF + STL fit-check)
+| Plate | Carries | Status |
+|---|---|---|
+| `plate_xcarriage.py` | MGN12 X-block, belt clamps, tool interface | ✅ DXF |
+| `plate_gantry_end.py` ×2 | MGN12 Y-block, gantry beam, 2 gantry idlers | ✅ DXF |
+| `plate_motor_corner.py` ×2 | NEMA17 tension slots, bottom-corner idler, 8020 mount | ✅ DXF |
+| crossover idler bracket | CX1/CX2 (mid bottom) | ⏳ small bracket |
+| (no top-corner plates) | top edge is belt-free | — |
 
 ## Open forks (need decisions before CAD)
 - [ ] **Rails:** MGN12 linear (recommended — stiffness at 1.2 m) vs. R1-style

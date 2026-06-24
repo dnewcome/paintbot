@@ -31,6 +31,16 @@ TOOL_BOLT     = 5.5     # M5 clearance
 XC_W          = 80.0    # plate width  (X, along gantry)
 XC_H          = 70.0    # plate height (motion-plane vertical)
 
+# ---- Motor-corner plate (bottom corners; NEMA17 on tension slots + 1 corner idler) ----
+MC_W          = 90.0    # plate width
+MC_H          = 90.0    # plate height
+NEMA17_PITCH  = 31.0    # NEMA17 mounting bolt square
+NEMA17_PILOT  = 22.5    # boss pilot (clearance)
+NEMA_BOLT     = 3.4     # M3 clearance
+TENSION_TRAVEL = 10.0   # motor slide range for belt tension (slots along X)
+# bottom-corner idler position relative to plate center (BL on the left plate) — first-pass
+MC_IDLER      = (32.0, 30.0)
+
 # ---- Gantry-end plate (MOVING; MGN12 Y-block + gantry beam + 2 gantry idlers) ----
 GE_W          = 100.0   # plate width
 GE_H          = 100.0   # plate height
