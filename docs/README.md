@@ -17,6 +17,8 @@ vertical CoreXY easel carrying a multi-stage brush head.
   the existing ShopBot first: mechanical stack-up, magnetic circuit, CAD parts.
 - **[extrusion-head.md](extrusion-head.md)** — second tool head: motor-driven
   syringe pump for thick gel medium (dip-and-load, single-bore reverse-fill, fat bead).
+- **[planar-corexy.md](planar-corexy.md)** — construction variant: laser/waterjet
+  plates locate the motion geometry, hybridized with the 8020 frame (after corexy.com R1).
 
 ## Decisions locked so far
 - Raked vertical CoreXY easel, **3×4 ft** work area (which dim is vertical: TBD).
