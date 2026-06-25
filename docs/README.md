@@ -21,6 +21,7 @@ vertical CoreXY easel carrying a multi-stage brush head.
   syringe pump for thick gel medium (dip-and-load, single-bore reverse-fill, fat bead).
 - **[planar-corexy.md](planar-corexy.md)** — construction variant: laser/waterjet
   plates locate the motion geometry, hybridized with the 8020 frame (after corexy.com R1).
+- **[bom.md](bom.md)** — consolidated bill of materials: brush head, driver, planar frame.
 
 ## Decisions locked so far
 - Raked vertical CoreXY easel, **3×4 ft** work area (which dim is vertical: TBD).

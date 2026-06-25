@@ -89,7 +89,13 @@ extends out the open mouth to the carrier + brush. Common attach interface:
 | `carrier.py` | printed: column + 2 blade clamp bars + attach flanges | ✅ watertight |
 | `blade.py` | bought shim steel (t=0.1) — cut drawing, ×2 | ✅ watertight |
 | `clamp_plate.py` | printed blade sandwich plate, ×4 | ✅ watertight |
-| `main_body.py` | printed: cup mount + flexure ground + ShopBot interface | ⏳ blocked on real Z-plate bolt pattern |
+| `body_collar.py` | printed: **Ø65 Shapeoko HDZ collar** + cup holder | ✅ watertight |
+| `flexure_ground.py` | printed U-frame: holds blade ends + bridges to collar | ✅ watertight (manifold) |
+| `assembly_brush.py` | full-stack viz + z-stack/clearance check | ✅ renders, clearances OK |
+
+**Mount:** the head drops into the Shapeoko **HDZ 65 mm router clamp** — `body_collar`
+IS the 65 mm collar, no bolt pattern needed. **Head width ~168 mm** (set by the soft
+long-blade flexure); a folded flexure could compact it later if needed.
 
 ### Flexure spring rate (validated)
 Symmetric 2-blade (4 guided-cantilever segments): `k = 4·E·w·t³/a³`. With spring

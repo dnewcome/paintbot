@@ -78,16 +78,25 @@ SLOT_W        = 1.6    # pinch slot for the clamp screw to close
 BODY_OD       = 40.0
 BODY_WALL     = 3.0
 
-# ---- ShopBot Z-plate interface (PLACEHOLDER — set to real bolt pattern) ----
-# TODO(operator): replace with the actual ShopBot Z-plate hole pattern.
+# ---- Tool-head Z-plate interface (legacy placeholder; still used by the extruder head) ----
+# NOTE: the brush head now mounts via the HDZ 65 mm collar (MOUNT_* below). The extruder
+# head still references these; keep until both heads are harmonized onto the collar.
 IFACE_PLATE_X = 70.0
 IFACE_PLATE_Y = 70.0
 IFACE_PLATE_T = 8.0
-IFACE_BOLT_DX = 50.0   # placeholder bolt spacing X
-IFACE_BOLT_DY = 50.0   # placeholder bolt spacing Y
-IFACE_BOLT_D  = 6.6    # M6 clearance (placeholder)
+IFACE_BOLT_DX = 50.0
+IFACE_BOLT_DY = 50.0
+IFACE_BOLT_D  = 6.6    # M6 clearance
+
+# ---- Shapeoko HDZ mount: 65 mm router-clamp collar (drop-in, no bolt pattern) ----
+MOUNT_DIA     = 65.0   # HDZ grips a 65 mm spindle/router collar (Carbide/Makita size)
+MOUNT_LEN     = 50.0   # collar grip length for the clamp
+# flexure ground-clamp X (blade end): center clamp half + free span + ground grip half
+GROUND_X      = BLADE_CC/2 + BLADE_FREE + BLADE_GC/2   # 54
+CUP_BOLT_BC   = (CUP_OD + CUP_ID)/2 - 1.0              # cup-floor bolt circle dia (matches steel_cup)
 
 # ---- Fastener clearances ----
 M3_CLEAR      = 3.4
 M3_TAP        = 2.5
+M5_CLEAR      = 5.5
 HEATSET_M3    = 4.0    # through-bore for M3 heat-set insert
