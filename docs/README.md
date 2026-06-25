@@ -15,6 +15,8 @@ vertical CoreXY easel carrying a multi-stage brush head.
   stroke/pressure actuator: requirements, EM design point, Path B flexure, driver.
 - **[voice-coil-head.md](voice-coil-head.md)** — brush tool head built/tested on
   the existing ShopBot first: mechanical stack-up, magnetic circuit, CAD parts.
+- **[voice-coil-driver.md](voice-coil-driver.md)** — single-phase current-mode
+  (=force-mode) driver + nested control loop + calibration; the bench-test path.
 - **[extrusion-head.md](extrusion-head.md)** — second tool head: motor-driven
   syringe pump for thick gel medium (dip-and-load, single-bore reverse-fill, fat bead).
 - **[planar-corexy.md](planar-corexy.md)** — construction variant: laser/waterjet
