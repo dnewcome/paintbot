@@ -1,8 +1,5 @@
-# generated CAD artifacts
-cad/build/
-build/
-*.stl
-*.png
+# Track generated CAD artifacts (STL/DXF/SVG/PNG in cad/build) so they're visible
+# on GitHub. Regenerate any of them with `python3 cad/<part>.py`.
 
 # python
 __pycache__/
