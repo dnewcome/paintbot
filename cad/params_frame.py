@@ -31,6 +31,15 @@ TOOL_BOLT     = 5.5     # M5 clearance
 XC_W          = 80.0    # plate width  (X, along gantry)
 XC_H          = 70.0    # plate height (motion-plane vertical)
 
+# ---- Coarse-Z carriage plate (rides 1x MGN12 / 2 blocks; carries a 65mm clamp) ----
+ZC_W          = 90.0
+ZC_H          = 110.0   # tall enough for 2 MGN12 blocks spaced along travel
+ZC_BLOCK_SP   = 50.0    # spacing between the 2 MGN12 blocks (along Z travel)
+ZC_CLAMP_BC_X = 50.0    # bought 65mm-clamp mount pattern — PLACEHOLDER, set to real clamp
+ZC_CLAMP_BC_Y = 40.0
+ZC_CLAMP_BOLT = 5.5     # M5 clearance
+ZC_BELT_BOLT  = 3.4     # belt-clamp screws
+
 # ---- Crossover idler bracket (mid bottom; 2 idlers stagger the crossing strands) ----
 CX_W          = 70.0
 CX_H          = 44.0
