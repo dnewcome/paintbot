@@ -31,6 +31,14 @@ TOOL_BOLT     = 5.5     # M5 clearance
 XC_W          = 80.0    # plate width  (X, along gantry)
 XC_H          = 70.0    # plate height (motion-plane vertical)
 
+# ---- Crossover idler bracket (mid bottom; 2 idlers stagger the crossing strands) ----
+CX_W          = 70.0
+CX_H          = 44.0
+# idler positions rel. bracket center (from routing.py CX1/CX2). Z-stagger (strand
+# clearance) handled by shoulder-screw length / spacers, not in-plane.
+CX_IDLER_1    = (-15.0,  7.5)
+CX_IDLER_2    = ( 15.0, -7.5)
+
 # ---- Motor-corner plate (bottom corners; NEMA17 on tension slots + 1 corner idler) ----
 MC_W          = 90.0    # plate width
 MC_H          = 90.0    # plate height

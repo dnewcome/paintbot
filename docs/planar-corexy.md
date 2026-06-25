@@ -80,7 +80,7 @@ Reconstructed in `cad/routing.py` (emits `build/routing.svg`). Topology:
 | `plate_xcarriage.py` | MGN12 X-block, belt clamps, tool interface | ✅ DXF |
 | `plate_gantry_end.py` ×2 | MGN12 Y-block, gantry beam, 2 gantry idlers | ✅ DXF |
 | `plate_motor_corner.py` ×2 | NEMA17 tension slots, bottom-corner idler, 8020 mount | ✅ DXF |
-| crossover idler bracket | CX1/CX2 (mid bottom) | ⏳ small bracket |
+| `plate_crossover.py` | CX1/CX2 idlers (mid bottom), 8020 mount | ✅ DXF |
 | (no top-corner plates) | top edge is belt-free | — |
 
 ## Open forks (need decisions before CAD)

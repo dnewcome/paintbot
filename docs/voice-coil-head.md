@@ -84,7 +84,7 @@ extends out the open mouth to the carrier + brush. Common attach interface:
 |---|---|---|
 | `pole.py` | lathe 1018 steel (Ø16×28 + register) | ✅ watertight |
 | `steel_cup.py` | lathe 1018 steel (Ø32×46, opens down) | ✅ watertight |
-| `bobbin.py` | printed winding former | ✅ watertight — but see rework below |
+| `bobbin.py` | printed flangeless former + foot (30 mm) | ✅ watertight (reworked) |
 | `brush_holder.py` | printed, 8 mm ferrule pinch-clamp | ✅ watertight |
 | `carrier.py` | printed: column + 2 blade clamp bars + attach flanges | ✅ watertight |
 | `blade.py` | bought shim steel (t=0.1) — cut drawing, ×2 | ✅ watertight |
@@ -102,10 +102,11 @@ swapping blade-shim thickness, k ∝ t³).
 Cup opens down; magnet+pole at the back; **pole lengthened to 28 mm** so the coil
 stays in the radial gap over ±5 mm travel; carrier bore opened to Ø18 to clear the
 pole tip; shared attach interface widened to **3× M3 @ 26 mm BC, Ø32 flanges**.
-- **bobbin rework:** coil rides the gap *near the cup mouth*; the Ø32 foot must sit
-  *below* the mouth (won't fit the Ø22.5 bore). Bobbin needs a ~28 mm tube
-  extension (winding on the upper 16 mm, foot below the mouth). Current bobbin is
-  the short winding former only — extend next.
+- **bobbin reworked ✅:** flangeless 30 mm former — coil epoxies onto the upper
+  16 mm (riding the gap near the mouth), thin top lip Ø21.5 clears the Ø22.5 bore,
+  Ø32 foot sits below the mouth and bolts to the carrier. (Winding retainer flanges
+  were dropped — Ø24 flange would foul the Ø22.5 cup bore; real voice coils are
+  flangeless anyway.)
 - **main_body:** waits on the real ShopBot Z-plate bolt pattern.
 
 ## Fit unknowns blocking CAD (need from operator)

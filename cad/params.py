@@ -28,9 +28,14 @@ WIND_THK      = 1.0    # radial winding build (≈2 layers AWG26)
 BOBBIN_ID     = POLE_DIA + 2*POLE_CLEAR          # 17.5
 BOBBIN_OD     = BOBBIN_ID + 2*BOBBIN_WALL        # 19.1 (winding surface)
 COIL_OD       = BOBBIN_OD + 2*WIND_THK           # 21.1
-BOBBIN_LEN    = 16.0   # bobbin tube length (winding window <= this)
-FLANGE_THK    = 1.2    # bobbin end flanges that retain the winding
-FLANGE_OD     = COIL_OD + 3.0                     # flange just proud of winding
+BOBBIN_LEN    = 16.0   # winding window (coil height) on the UPPER former
+BOBBIN_TUBE_LEN = 30.0 # full former length: coil up in the gap + extension to the foot
+                       # (foot sits BELOW the cup mouth; coil rides the gap near the mouth)
+FLANGE_THK    = 1.2    # foot flange thickness
+FLANGE_OD     = COIL_OD + 3.0                     # (unused on former now; foot uses FOOT_OD)
+# top winding lip must clear the cup bore (CUP_ID 22.5): just proud of coil OD
+LIP_OD        = 21.5
+LIP_TH        = 1.2
 
 # ---- Stroke / flexure ----
 # Symmetric single parallelogram: 2 blades (upper+lower), each fixed at BOTH ground
