@@ -83,8 +83,10 @@ Reconstructed in `cad/routing.py` (emits `build/routing.svg`). Topology:
 | `plate_crossover.py` | CX1/CX2 idlers (mid bottom), 8020 mount | ✅ DXF |
 | (no top-corner plates) | top edge is belt-free | — |
 
-3D assembly of the real plates: `cad/assembly_corexy.py` → `build/assembly_corexy.png`
-(plates placed at routing positions + MGN12 rail/8020 stand-ins, landscape).
+Full-machine 3D view: `cad/assembly_corexy.py` → `build/assembly_corexy.png` — the
+real flat plates at their routing positions + the **real brush head** on the carriage
+reaching the canvas, with MGN12 rails / 8020 frame / NEMA23 motors as stand-ins, the
+canvas slab, and the whole easel raked back. (Folds in the retired `machine.py` massing.)
 
 ## Open forks (need decisions before CAD)
 - [ ] **Rails:** MGN12 linear (recommended — stiffness at 1.2 m) vs. R1-style

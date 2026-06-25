@@ -31,6 +31,6 @@ def render(stl, png, elev=22, azim=-60, color="#b9c4d0", yup=False):
     print("wrote", png)
 
 if __name__ == "__main__":
-    render("build/machine.stl", "build/machine.png", elev=14, azim=-78, yup=True)
+    render("build/assembly_corexy.stl", "build/assembly_corexy.png", elev=20, azim=102, yup=True)
     render("build/assembly_extruder.stl", "build/assembly_extruder.png", elev=14, azim=-70)
     render("build/assembly_brush.stl", "build/assembly_brush.png", elev=10, azim=-70)
